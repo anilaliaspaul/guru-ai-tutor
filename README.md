@@ -1,3 +1,4 @@
+<!-- GURU logo -->
 <p align="center">
   <img src="skills/guru/assets/guru-logo.png" alt="GURU – Your Personal AI Learning Mentor" width="820">
 </p>
@@ -35,6 +36,7 @@ guru-ai-tutor/
 ├── README.md
 ├── LICENSE
 ├── CHANGELOG.md
+├── ROADMAP.md
 ├── .gitignore
 ├── skills/
 │   └── guru/
@@ -43,8 +45,9 @@ guru-ai-tutor/
 │       │   └── openai.yaml
 │       └── assets/
 │           ├── guru-icon.png
-│           ├── guru-logo.svg
-│           └── guru-logo.png
+│           ├── guru-icon.svg
+│           ├── guru-logo.png
+│           └── guru-logo.svg
 ├── .claude/
 │   └── skills/
 │       └── guru/
@@ -62,10 +65,8 @@ guru-ai-tutor/
 ### Global installation
 
 ```bash
-npx skills add https://github.com/OWNER/REPOSITORY --skill guru -a claude-code -g
+npx skills add https://github.com/anilaliaspaul/guru-ai-tutor --skill guru -a claude-code -g
 ```
-
-Replace `OWNER/REPOSITORY` with the public GitHub repository path.
 
 ### Project installation
 
@@ -85,7 +86,11 @@ Copy `skills/guru` to `~/.agents/skills/guru` on macOS/Linux, or `%USERPROFILE%\
 
 Clone the repository and open it in Codex. The included `.agents/skills/guru/` folder is the repository-level discovery location.
 
-Codex can also install skills from external repositories using its built-in `$skill-installer`. In Codex, invoke `$skill-installer` and provide the public GitHub repository URL and the `skills/guru` path when prompted.
+Codex can also install skills from external repositories using its built-in `$skill-installer`. In Codex, invoke `$skill-installer` and provide the public GitHub repository URL:
+
+`https://github.com/anilaliaspaul/guru-ai-tutor`
+
+Then specify the skill path: `skills/guru`.
 
 If a newly added skill does not appear, restart Codex and inspect available skills with `/skills`.
 
